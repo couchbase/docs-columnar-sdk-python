@@ -1,0 +1,21 @@
+name: python-columnar-sdk
+version: '1.0'
+title: Python Columnar SDK
+start_page: hello-world:overview.adoc
+nav:
+- modules/ROOT/nav.adoc
+
+asciidoc:
+  attributes:
+    page-nav-header-levels: 2
+    server_version: '7.6.2'
+    sdk_current_version: '1.0.0'
+    sdk_dot_minor: '1.0'
+    sdk_dot_major: '1.x'
+    version-server: '7.6'
+    version-common: '7.6'
+    name_platform: 'Python'
+    name-sdk: 'Python Columnar SDK'
+    sdk_api: '1.0'
+    sdk-api-link: 
+    sdk-gh-link: 
