@@ -2,22 +2,25 @@
 
 == Before You Start
 
-Currently Python 3.8 - Python 3.11 is supported.  Python 3.12 support is coming soon.
+Currently Python 3.8 - Python 3.11 is supported.
+Python 3.12 support is coming soon.
 
 == Getting the SDK
 
-Eventually the SDK will be published to PyPI, but in the interim a select set of wheels are available on the https://github.com/couchbaselabs/columnar-python-client/releases[Github Releases page].  If a wheel is not available for your specific Python version and/or platform, see the https://github.com/couchbaselabs/columnar-python-client/blob/main/BUILDING.md[Github Building page] for details on how to build the SDK's binary.
+Eventually the SDK will be published to PyPI, but in the interim a select set of wheels are available on the https://github.com/couchbaselabs/columnar-python-client/releases[Github Releases page].
+If a wheel is not available for your specific Python version and/or platform,
+see the https://github.com/couchbaselabs/columnar-python-client/blob/main/BUILDING.md[GitHub Building page] for details on how to build the SDK's binary.
 
 To install the SDK from a wheel on the https://github.com/couchbaselabs/columnar-python-client/releases[Github Releases page]:
 
-* Download the appropriate wheel
-* Unzip the downloaded file
-* Install via pip: `python3 -m pip install <path to unzipped wheel>`
+. Download the appropriate wheel
+. Unzip the downloaded file
+. Install via pip: `python3 -m pip install <path to unzipped wheel>`
 
 If a compatible wheel is not available, the SDK's binary will need to be built from source:
 
-* Follow the steps on the https://github.com/couchbaselabs/columnar-python-client/blob/main/BUILDING.md[Github Building page]
-* After the build succeeds, the SDK can be used by running Python scripts from within the cloned repository or the SDK can be installed via pip: `python3 -m pip install <path to cloned repository>`
+* Follow the steps on the https://github.com/couchbaselabs/columnar-python-client/blob/main/BUILDING.md[GitHub Building page].
+* After the build succeeds, the SDK can be used by running Python scripts from within the cloned repository -- or the SDK can be installed via pip: `python3 -m pip install <path to cloned repository>`
 
 
 == Connecting and Executing a Query
@@ -81,7 +84,6 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
-
 ----
 
 === Asynchronous (asyncio) API
@@ -145,5 +147,4 @@ async def main() -> None:
 if __name__ == '__main__':
     loop = get_event_loop()
     loop.run_until_complete(main())
-
 ----
