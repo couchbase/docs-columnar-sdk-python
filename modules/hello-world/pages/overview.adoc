@@ -1,5 +1,9 @@
 = Hello Columnar -- Python SDK
 
+IMPORTANT: This page covers the pre-relase columnar SDK, for the internal preview, and remains applicable (internally) until the SDKs GA in October.
+The other pages appearing in the left-hand nav are part of docs development towards GA, and may not be accurate until GA.
+
+
 == Before You Start
 
 Currently Python 3.8 - Python 3.11 is supported.
@@ -9,7 +13,7 @@ Python 3.12 support is coming soon.
 
 Eventually the SDK will be published to PyPI, but in the interim a select set of wheels are available on the https://github.com/couchbaselabs/columnar-python-client/releases[GitHub Releases page].
 If a wheel is not available for your specific Python version and/or platform,
-see the https://github.com/couchbaselabs/columnar-python-client/blob/main/BUILDING.md[GitHub Building page] for details on how to build the SDK's binary.
+See the https://github.com/couchbaselabs/columnar-python-client/blob/main/BUILDING.md[GitHub Building page] for details on how to build the SDK's binary.
 
 To install the SDK from a wheel on the https://github.com/couchbaselabs/columnar-python-client/releases[GitHub Releases page]:
 
