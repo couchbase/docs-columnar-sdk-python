@@ -17,5 +17,5 @@ asciidoc:
     name_platform: 'Python'
     name-sdk: 'Python Columnar SDK'
     sdk_api: '1.0'
-    sdk-api-link: 
-    sdk-gh-link: 
+    sdk-api-link: https://docs.couchbase.com/sdk-api/columnar-python-client
+    sdk-gh-link: https://github.com/couchbaselabs/columnar-python-client

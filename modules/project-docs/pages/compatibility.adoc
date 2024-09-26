@@ -1,35 +1,32 @@
 = Compatibility
-:description: Platform compatibility, and features available in different SDK versions, and compatibility between Server and SDK. \
-Plus notes on Cloud, networks, and AWS Lambda.
-:page-aliases: ROOT:overview,ROOT:compatibility-versions-features,compatibility-versions-features
+:description: Platform compatibility, and features available in different SDK versions, and compatibility between Server and SDK.
 :page-toclevels: 3
 :table-caption!:
 
 
 [abstract]
 {description}
+// Plus notes on Cloud, networks, and AWS Lambda.
 
 
-The {sdk_dot_minor} {name-sdk} requires Java 17 or later to be installed.
-We recommend using the most recent long-term support (LTS) version of OpenJDK.
 
-TIP: Remember to keep your Java installation up to date with the latest patches.
 
 
 == Platform Compatibility
 
 
-=== JDK Version Compatibility
+=== Python Version Compatibility
 
-include::{sdk_api}@columnar-sdk:shared:partial$compatibility.adoc[tag=jdk-version]
+Currently Python 3.8 - Python 3.11 is supported.
+Python 3.12 support is coming soon.
 
-
+// TIP: Remember to keep your Python installation up to date, via `pip`.
 
 
 
 === OS Compatibility
 
-include::{sdk_api}@columnar-sdk:shared:partial$compatibility.adoc[tag=os-compat-jvm]
+include::{sdk_api}@columnar-sdk:shared:partial$compatibility.adoc[tag=os-compat]
 
 
 
@@ -73,7 +70,7 @@ include::{sdk_api}@columnar-sdk:shared:partial$compatibility.adoc[tag=api-versio
 
 === Interface Stability
 
-include::{version-common}@sdk:shared:partial$interface-stability-pars.adoc[tag=interface-stability-section]
+include::{version-common}@columnar-sdk:shared:partial$interface-stability-pars.adoc[tag=interface-stability-section]
 
 
 
@@ -82,7 +79,7 @@ include::{version-common}@sdk:shared:partial$interface-stability-pars.adoc[tag=i
 ////
 === Older SDK Versions
 
-include::{version-common}@sdk:shared:partial$archive.adoc[tag=link]
+include::{version-common}@columnar-sdk:shared:partial$archive.adoc[tag=link]
 ////
 
 ////
