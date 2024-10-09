@@ -12,7 +12,7 @@
 == Before You Start
 
 
-Currently Python 3.8 - Python 3.11 is supported.
+Currently Python 3.9 - Python 3.11 is supported.
 Python 3.12 support is coming soon.
 
 TIP: Remember to keep your Python installation up to date with the latest patches.
