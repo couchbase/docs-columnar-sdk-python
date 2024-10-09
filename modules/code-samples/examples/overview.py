@@ -1,9 +1,7 @@
 # tag::overview[]
 from couchbase_columnar.cluster import Cluster
 from couchbase_columnar.credential import Credential
-from couchbase_columnar.options import (ClusterOptions,
-                                        QueryOptions,
-                                        SecurityOptions)
+from couchbase_columnar.options import QueryOptions
 
 
 def main() -> None:
@@ -14,12 +12,7 @@ def main() -> None:
     # User Input ends here.
 
     cred = Credential.from_username_and_password(username, pw)
-    # Configure a secure connection to a Couchbase internal pre-production cluster.
-    # (Omit this when connecting to a production cluster!)
-    from couchbase_columnar.common.core._certificates import _Certificates
-    sec_opts = SecurityOptions.trust_only_certificates(_Certificates.get_nonprod_certificates())
-    opts = ClusterOptions(security_options=sec_opts)
-    cluster = Cluster.create_instance(connstr, cred, opts)
+    cluster = Cluster.create_instance(connstr, cred)
 
     # Execute a query and buffer all result rows in client memory.
     statement = 'SELECT * FROM `travel-sample`.inventory.airline LIMIT 10;'
