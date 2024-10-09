@@ -60,10 +60,19 @@ include::code-samples:example$query.py[tag=query-positional-params,indent=0]
 include::code-samples:example$query.py[tag=query-named-params,indent=0]
 ----
 
+== Using the Query Result
+
+Results from the Couchbase Columnar SDK can easily be used with several common Data Analytics Python libraries, including https://pandas.pydata.org/[Pandas] and https://arrow.apache.org/docs/python/index.html[PyArrow].
+[source,python]
+.Importing the result to a pandas DataFrame.
+----
+include::code-samples:example$third_party.py[tag=pandas,indent=0]
+----
+
+[source,python]
+.Importing the query result to a PyArrow table.
+----
+include::code-samples:example$third_party.py[tag=pyarrow,indent=0]
+----
+
 == Further Information
-
-
-
-
-
-
