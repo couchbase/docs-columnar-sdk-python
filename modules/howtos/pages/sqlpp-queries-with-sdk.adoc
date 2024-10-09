@@ -32,10 +32,33 @@ Create a collection to work upon by xref:columnar:intro:examples.adoc#travel-sam
 
 == Querying Your Dataset
 
+=== Scope Level Queries
 
-*TODO -- add code samples.*
+[source,python]
+----
+include::code-samples:example$query.py[tag=scope-query,indent=0]
+----
 
+=== Cluster Level Queries
 
+[source,python]
+----
+include::code-samples:example$query.py[tag=cluster-query,indent=0]
+----
+
+=== Positional Parameters
+
+[source,python]
+----
+include::code-samples:example$query.py[tag=query-positional-params,indent=0]
+----
+
+=== Named Parameters
+
+[source,python]
+----
+include::code-samples:example$query.py[tag=query-named-params,indent=0]
+----
 
 == Further Information
 
