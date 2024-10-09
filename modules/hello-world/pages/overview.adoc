@@ -6,7 +6,7 @@ The other pages appearing in the left-hand nav are part of docs development towa
 
 == Before You Start
 
-Currently Python 3.8 - Python 3.12 is supported.
+Currently Python 3.9 - Python 3.12 is supported.
 
 == Getting the SDK
 
