@@ -13,7 +13,7 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-# tag::logger[]
+# tag::logging[]
 import logging
 
 import couchbase_columnar
@@ -53,4 +53,4 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
-# end::logger[]
+# end::logging[]
