@@ -1,7 +1,6 @@
 = Logging
 :description: Logging with the Columnar Python SDK.
 
-include::project-docs:partial$attributes.adoc[]
 
 [abstract]
 {description}
