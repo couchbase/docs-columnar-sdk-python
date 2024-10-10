@@ -1,5 +1,5 @@
 = Querying with {sqlpp}
-:page-toclevels: 2
+:page-toclevels: 3
 :description: You can query for documents in Couchbase using the {sqlpp} query language, a language based on SQL, but designed for structured and flexible JSON documents.
 
 
@@ -30,6 +30,8 @@ Create a collection to work upon by xref:columnar:intro:examples.adoc#travel-sam
 
 
 == Querying Your Dataset
+
+Most queries return more than one result, and you want to iterate over the results:
 
 === Scope Level Queries
 
@@ -77,7 +79,14 @@ include::devguide:example$python/async_query.py[tag=cluster-query,indent=0]
 --
 ====
 
-=== Positional Parameters
+
+=== Positional and Named Parameters
+
+Supplying parameters as individual arguments to the query allows the query engine to optimize the parsing and planning of the query. You can either supply these parameters by name or by position.
+
+==== Positional Parameters
+
+Execute a query with positional arguments:
 
 [{tabs}]
 ====
@@ -100,7 +109,9 @@ include::devguide:example$python/async_query.py[tag=query-positional-params,inde
 --
 ====
 
-=== Named Parameters
+==== Named Parameters
+
+Execute a query with named arguments:
 
 [{tabs}]
 ====
