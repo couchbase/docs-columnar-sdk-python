@@ -1,6 +1,6 @@
-= Hello Columnar -- Python SDK
+= Hello Columnar -- Python SDK Quickstart Guide
 :page-toclevels: 2
-:description: Install, connect, try. A quick start guide to get you up and running with Couchbase and the {name-sdk}.
+:description: Install, connect, try. A quick start guide to get you up and running with Columnar and the {name-sdk}.
 
 [abstract]
 {description}
@@ -11,30 +11,28 @@
 
 == Before You Start
 
+Sign up for a xref:cloud:get-started:create-account.adoc#sign-up-free-trial[Capella Free Trial],
+and choose a xref:columnar:intro:intro.adoc[Columnar] cluster.
 
-Currently Python 3.9 - Python 3.11 is supported.
-Python 3.12 support is coming soon.
+You'll need to add your IP address to the allowlist, during the sign-up and cluster creation process (this can also be done at any time, via the UI, should the address change, or if you need to add a new one).
 
-TIP: Remember to keep your Python installation up to date with the latest patches.
+=== Prerequisites
+
+Currently Python 3.9 - Python 3.12 is supported.
+See the xref:project-docs:compatibility.adoc#platform-compatibility[compatibility page] for more information about platform support.
 
 
 == Getting the SDK
 
+The SDK can be installed via `pip`:
 
-Eventually the SDK will be published to PyPI, but in the interim a select set of wheels are available on the https://github.com/couchbaselabs/columnar-python-client/releases[GitHub Releases page].
-If a wheel is not available for your specific Python version and/or platform,
-See the https://github.com/couchbaselabs/columnar-python-client/blob/main/BUILDING.md[GitHub Building page] for details on how to build the SDK's binary.
+[source,console]
+----
+python -m pip install couchbase-columnar
+----
 
-To install the SDK from a wheel on the https://github.com/couchbaselabs/columnar-python-client/releases[GitHub Releases page]:
+For other installation methods, see the xref:project-docs:sdk-full-installation.adoc[installation page].
 
-. Download the appropriate wheel
-. Unzip the downloaded file
-. Install via pip: `python3 -m pip install <path to unzipped wheel>`
-
-If a compatible wheel is not available, the SDK's binary will need to be built from source:
-
-* Follow the steps on the https://github.com/couchbaselabs/columnar-python-client/blob/main/BUILDING.md[GitHub Building page].
-* After the build succeeds, the SDK can be used by running Python scripts from within the cloned repository -- or the SDK can be installed via pip: `python3 -m pip install <path to cloned repository>`
 
 
 [quickstart]

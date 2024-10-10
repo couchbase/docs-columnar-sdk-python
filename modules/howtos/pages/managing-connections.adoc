@@ -1,5 +1,5 @@
 = Managing Connections
-:description: This section describes how to connect the {name-sdk} to a Couchbase cluster.
+:description: This section describes how to connect the {name-sdk} to a Columnar cluster.
 :page-toclevels: 2
 
 
@@ -47,20 +47,12 @@ def main() -> None:
     # User Input ends here.
 
     cred = Credential.from_username_and_password(username, pw)
-    # Configure a secure connection to a Couchbase internal pre-production cluster.
-    # (Omit this when connecting to a production cluster!)
-    from couchbase_columnar.common.core._certificates import _Certificates
-    sec_opts = SecurityOptions.trust_only_certificates(_Certificates.get_nonprod_certificates())
-    opts = ClusterOptions(security_options=sec_opts)
     cluster = Cluster.create_instance(connstr, cred, opts)
 ----
 
 
-The client certificate for connecting to a Capella Columnar instance is included in the SDK installation.
-
-NOTE: Capella's root certificate is *not* signed by a well known CA (Certificate Authority).
-However, as the certificate is bundled with the SDK, it is trusted by default.
-
+NOTE: Capella's root certificate is *not* signed by a well known Certificate Authority.
+However, the certificate is bundled with the SDK, and is automatically trusted unless you specify a different certificate to trust.
 
 
 
@@ -76,7 +68,7 @@ for which the `couchbases://` schema is used as the root of the connection strin
 
 .Simple connection string with one seed node
 ----
-cb.<your-endpoint>.cloud.couchbase.com
+couchbases://cb.<your-endpoint>.cloud.couchbase.com
 ----
 
 ////
@@ -95,7 +87,7 @@ The client fetches the full address list from the first node it is able to conta
 
 .Connection string with two parameters
 ----
-cb.<your-endpoint>.cloud.couchbase.com?io.networkResolution=external&timeout.kvTimeout=10s
+couchbases://cb.<your-endpoint>.cloud.couchbase.com?timeout.connect_timeout=75s&timeout.query_timeout=100s
 ----
 
 The full list of recognized parameters is documented in the xref:ref:client-settings.adoc[client settings reference].

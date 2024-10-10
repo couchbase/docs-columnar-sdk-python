@@ -1,7 +1,6 @@
 = Querying with {sqlpp}
+:page-toclevels: 2
 :description: You can query for documents in Couchbase using the {sqlpp} query language, a language based on SQL, but designed for structured and flexible JSON documents.
-// :page-aliases: n1ql-query.adoc,n1ql-queries-with-sdk.adoc
-// :page-aliases: ROOT:document-operations.adoc,ROOT:documents-creating,ROOT:documents-updating,ROOT:documents-retrieving,ROOT:documents-deleting,n1ql-queries-with-sdk.adoc
 
 
 [abstract]
@@ -41,7 +40,7 @@ Sync API::
 --
 [source,python]
 ----
-include::code-samples:example$query.py[tag=scope-query,indent=0]
+include::devguide:example$python/query.py[tag=scope-query,indent=0]
 ----
 --
 
@@ -50,7 +49,7 @@ Async API::
 --
 [source,python]
 ----
-include::code-samples:example$async_query.py[tag=scope-query,indent=0]
+include::devguide:example$python/async_query.py[tag=scope-query,indent=0]
 ----
 --
 ====
@@ -64,7 +63,7 @@ Sync API::
 --
 [source,python]
 ----
-include::code-samples:example$query.py[tag=cluster-query,indent=0]
+include::devguide:example$python/query.py[tag=cluster-query,indent=0]
 ----
 --
 
@@ -73,7 +72,7 @@ Async API::
 --
 [source,python]
 ----
-include::code-samples:example$async_query.py[tag=cluster-query,indent=0]
+include::devguide:example$python/async_query.py[tag=cluster-query,indent=0]
 ----
 --
 ====
@@ -87,7 +86,7 @@ Sync API::
 --
 [source,python]
 ----
-include::code-samples:example$query.py[tag=query-positional-params,indent=0]
+include::devguide:example$python/query.py[tag=query-positional-params,indent=0]
 ----
 --
 
@@ -96,7 +95,7 @@ Async API::
 --
 [source,python]
 ----
-include::code-samples:example$async_query.py[tag=query-positional-params,indent=0]
+include::devguide:example$python/async_query.py[tag=query-positional-params,indent=0]
 ----
 --
 ====
@@ -110,7 +109,7 @@ Sync API::
 --
 [source,python]
 ----
-include::code-samples:example$query.py[tag=query-named-params,indent=0]
+include::devguide:example$python/query.py[tag=query-named-params,indent=0]
 ----
 --
 
@@ -119,7 +118,7 @@ Async API::
 --
 [source,python]
 ----
-include::code-samples:example$async_query.py[tag=query-named-params,indent=0]
+include::devguide:example$python/async_query.py[tag=query-named-params,indent=0]
 ----
 --
 ====
@@ -130,13 +129,20 @@ Results from the Couchbase Columnar SDK can easily be used with several common D
 [source,python]
 .Importing the result to a pandas DataFrame.
 ----
-include::code-samples:example$third_party.py[tag=pandas,indent=0]
+include::devguide:example$python/third_party.py[tag=pandas,indent=0]
 ----
 
 [source,python]
 .Importing the query result to a PyArrow table.
 ----
-include::code-samples:example$third_party.py[tag=pyarrow,indent=0]
+include::devguide:example$python/third_party.py[tag=pyarrow,indent=0]
 ----
 
+
+
 == Further Information
+
+The xref:server:analytics:1_intro.adoc[{sqlpp} for Analytics Reference]
+offers a complete guide to the SQL++ language for both of our analytics services, including all of the latest additions.
+
+
