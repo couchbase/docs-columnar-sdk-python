@@ -27,3 +27,7 @@ This enables Zero ETL, reducing costs, complexity, and improving time to insight
 
 
 *TODO -- more info.*
+
+// Parameterized queries
+
+// include::{version-common}@columnar-sdk:pages:partial$sqlpp.adoc[tag=options]
