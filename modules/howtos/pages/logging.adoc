@@ -19,20 +19,20 @@ include::devguide:example$python/logging_example.py[tag=logging]
 
 == Logging via Environmental Settings
 
-IMPORTANT: Only one logger can be created.  Either use `PYCBC_LOG_LEVEL` to create a console logger or python `logging`, as mentioned above.
+IMPORTANT: Only one logger can be created.  Either use `PYCBCC_LOG_LEVEL` to create a console logger or python `logging`, as mentioned above.
 
-In the command line environment, the PYCBC_LOG_LEVEL variable is set as follows:
+In the command line environment, the PYCBCC_LOG_LEVEL variable is set as follows:
 
 .GNU/Linux and Mac
 [source,console]
 ----
-export PYCBC_LOG_LEVEL=<log-level>
+export PYCBCC_LOG_LEVEL=<log-level>
 ----
 
 .Windows
 [source,console]
 ----
-set PYCBC_LOG_LEVEL=<log-level>
+set PYCBCC_LOG_LEVEL=<log-level>
 ----
 
 Where `<log-level>` is either `error`, `warn`, `info`, or `debug`.
