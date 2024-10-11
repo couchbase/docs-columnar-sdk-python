@@ -33,6 +33,4 @@ This is the first General Availability (GA) release of the new Couchbase Columna
 It supports executing queries against Capella Columnar clusters, with additional features planned for future releases.
 
 https://docs.couchbase.com/sdk-api/columnar-python-client-1.0.0/[API Reference]
-
-
 // end::all[]
