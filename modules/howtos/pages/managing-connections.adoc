@@ -257,3 +257,4 @@ More details on connecting your client code to Couchbase Capella can be found xr
 === Troubleshooting Connections to Cloud
 
 Some DNS caching providers (notably, home routers) can’t handle an SRV record that’s large -- if you have DNS-SRV issues with such a set-up, reduce your DNS-SRV to only include three records.
+[_For development only, not production._]. 
