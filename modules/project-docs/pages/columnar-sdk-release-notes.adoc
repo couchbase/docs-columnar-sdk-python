@@ -55,15 +55,16 @@ Improved `ColumnarError` `__repr__()`.
 ==== Fixes
 
 * https://jira.issues.couchbase.com/browse/PYCO-44[PYCO-44],
-* https://jira.issues.couchbase.com/browse/PYCO-84[PYCO-84]:
+https://jira.issues.couchbase.com/browse/PYCO-84[PYCO-84]:
 Fixed dispatch timer to cancel after request has been successfully sent to server.
 
 * https://jira.issues.couchbase.com/browse/PYCO-83[PYCO-83],
-* https://jira.issues.couchbase.com/browse/PYCO-85[PYCO-85]:
+https://jira.issues.couchbase.com/browse/PYCO-85[PYCO-85]:
 Fixed potential crash during scaling scenarios.
 
 * https://jira.issues.couchbase.com/browse/PYCO-89[PYCO-89]:
-The internal `QueryOperationCanceledError` is no longer raised. Instead, `ColumnarError` is raised.
+The internal `QueryOperationCanceledError` is no longer raised.
+Instead, `ColumnarError` is raised.
 
 
 === Version 1.0.0 (11 October 2024)
