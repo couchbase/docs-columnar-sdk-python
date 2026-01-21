@@ -47,6 +47,7 @@ The best way to accommodate developing an application that is to be deployed to 
 // For the Python SDK, that is to keep a separate properties file for your development and production environments.
 
 
+include::columnar-sdk:shared:partial$compatibility.adoc[tag=wrapper-no-mix]
 
 
 ////

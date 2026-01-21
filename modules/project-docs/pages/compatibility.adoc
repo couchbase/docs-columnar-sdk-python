@@ -11,6 +11,9 @@
 
 
 
+include::columnar-sdk:shared:partial$compatibility.adoc[tag=wrapper-no-mix]
+
+
 
 == Platform Compatibility
 
