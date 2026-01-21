@@ -22,6 +22,11 @@ Currently Python 3.9 - Python 3.12 is supported.
 See the xref:project-docs:compatibility.adoc#platform-compatibility[compatibility page] for more information about platform support.
 
 
+
+include::columnar-sdk:shared:partial$compatibility.adoc[tag=wrapper-no-mix]
+
+
+
 == Getting the SDK
 
 
