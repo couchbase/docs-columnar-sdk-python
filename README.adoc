@@ -33,7 +33,7 @@ The philosophy behind the Information Architecture can be found in the https://d
 
 Antora modules used are as follows:
 
-* concept-docs -- discussion docs explaining SDK-relevant aspects of Couchbase & Columnar; in the published docs these are now interleaved with the howtos, rather than in a separate section.
+* concept-docs -- discussion docs explaining SDK-relevant aspects of Couchbase & {oi-cloud-name}; in the published docs these are now interleaved with the howtos, rather than in a separate section.
 This module also contains the mini landing pages which introduce each section.
 * devguide/examples -- the home of all code examples.
 * hello-world -- overview (landing page) and the introductory tutorials.
